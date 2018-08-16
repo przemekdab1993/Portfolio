@@ -1,10 +1,11 @@
 const $box = $('.box2');
 const $tex_box = $('.text_box2');
 const $bar = $('#move_bar');
+const $hide_menu = $('.hide_menu');
 
 function move_bar_move() {
 	setTimeout( function() {
-		$bar.fadeIn(500).animate({left: '150px', bottom: '34vh'}, 2000);
+		$bar.fadeIn(500).animate({left: '130px', bottom: '34vh'}, 2000);
 	}, 800);
 }
 
@@ -46,6 +47,7 @@ function check_scrolls() {
 $(function() {
 	$tex_box.hide();
 	$bar.hide();
+	$hide_menu.hide();
 	
 	move_bar_move();
 	check_scrolls();
@@ -60,7 +62,7 @@ $(function() {
 	$(document).on('scroll', function() { check_scrolls(); });
 	
 	
-	$('#menu ul li').children().on('click', function(event) {
+	$('#menu ul li').add('#menu_button ul li').children().on('click', function(event) {
 	
 		let $target = $( $(this).attr('href') );
 		let $rr = $(event.target);
@@ -70,6 +72,11 @@ $(function() {
 			$('html, body').animate({ scrollTop: $target.offset().top }, 1000);
 		}
 		$('#menu ul li a').removeClass('click_menu');
-		$rr.addClass('click_menu');
+		$rr.not('#menu_button ul li a').addClass('click_menu');
 	});
+	$('#menu_button').on('click', function() {
+		$hide_menu.toggle();
+	});
+	
+	
 });
