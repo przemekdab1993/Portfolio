@@ -111,6 +111,7 @@ span.pink
 	padding: 40px;
 	font-size: 28px;
 	border-radius: 20px;
+	width: 40%;
 	color: #fff;
 	transition: background-color 1.2s;
 }
@@ -153,6 +154,7 @@ span.pink
 	display: flex;
 	width: 100%;
 	max-width: 1200px;
+	margin: 0px auto;
 	justify-content: center;
 	flex-wrap: wrap;
 	font-weight: 700;
@@ -218,6 +220,7 @@ span.pink
 #contact
 {
 	padding: 140px 250px;
+	max-width: 1200px;
 	margin: 40px auto;
 	font-size: 24px;
 	text-align: center;
