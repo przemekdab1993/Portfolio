@@ -1,10 +1,11 @@
 body 
 {
+	font-family: 'Poppins', sans-serif;
 	margin: 0px;
 	padding: 0px;
 	background-color: #fff;
 	color: #000;
-	font-size: 20px;
+	font-size: 18px;
 	background: url('../img/t001.png') left -80px bottom -160px;
 	background-repeat: no-repeat;
 }
@@ -15,7 +16,14 @@ a
 }
 h2
 {
+	font-family: 'Francois One', sans-serif;
 	text-align: center;
+	font-size: 42px;
+	letter-spacing: 1px;
+}
+p
+{
+	text-indent: 1.5em;
 }
 span.pink
 {
@@ -86,13 +94,14 @@ span.pink
 	list-style-type: none;
 	display: inline-block;
 }
-#menu ul li a
+#menu ul li>a
 {
+	font-family: 'Source Sans Pro', sans-serif;
 	display: block;
 	padding: 10px 12px 7px 12px;
 	transition: border-bottom 0.3s, padding-bottom 0.5s;
 }
-#menu ul li a:hover
+#menu ul li>a:hover
 {
 	border-bottom: 2px solid #ff0066;
 	padding-bottom: 7px;
@@ -109,7 +118,7 @@ span.pink
 	bottom: 30vh;
 	background-color: rgba(20, 0, 26, 0.45);
 	padding: 40px;
-	font-size: 28px;
+	font-size: 24px;
 	border-radius: 20px;
 	width: 50%;
 	color: #fff;
@@ -121,18 +130,18 @@ span.pink
 }
 #about_me
 {
-	width: 900px;
+	width: 920px;
 	padding: 40px 0px;
 	margin: 40px auto;
 }
 #my_face
 {
 	float: left;
-	width: 320px;
-	height: 320px;
+	width: 340px;
+	height: 340px;
 	border: 3px solid #444442;
 	margin: 40px 20px 0px 0px;
-	box-shadow: 12px 10px 10px #808080;
+	box-shadow: 12px 8px 10px #808080;
 }
 #text_about_me
 {
@@ -171,11 +180,12 @@ span.pink
 }
 #projects
 {
+	padding: 40px 0px;
 	text-align: center;
 }
 #projects a:hover
 {
-	color: #ff0066;
+	color: #0066ff;
 }
 #projects_box 
 {
@@ -214,46 +224,61 @@ span.pink
 	bottom: 0px;
 	width: 100%;
 	padding: 16px 0px;
-	background-color: rgba(255, 0, 102, 0.5);
+	background-color: rgba(255, 0, 102, 0.7);
 	color: #fff;
+}
+.link_2
+{
+	color: #ff0066 !important;
+}
+a.link_2:hover
+{
+	color: #0066ff !important;
 }
 #contact
 {
-	padding: 140px 250px;
+	padding: 100px 200px;
 	background: url('../img/null.png');
-	background-size: 100% 100%;
+	background-color: rgba(210, 210, 210, 0.5);
+	background-position: left 50% top 50%;
 	background-repeat: no-repeat;
 }
 #contact_box
 {
-	font-size: 24px;
+	font-size: 20px;
 	text-align: center;
 	max-width: 1000px;
 	width: 100%;
 	margin: 0px auto;
 }
-#contact_box ul
+.contact_table
 {
-	list-style-type: none;
-	
+	margin: 0px auto;
+	text-align: left;
+	font-size: 22px;
+}
+.contact_table tr td
+{
+	padding: 0px 10px;
 }
 footer
 {
 	background-color: rgba( 242, 242, 242, 0.5);
 	text-align: center;
+	font-style: italic;
 	width: 400px;
 	padding: 10px;
 	border-radius: 15px;
-	margin: 50px auto;
+	margin: 50px auto 30px auto;
 	word-spacing: 5px;
-	font-size: 18px;
+	font-size: 17px;
 }
 
-@media only screen and (max-width: 900px)
+@media only screen and (max-width: 992px)
 {
 	#home_container
 	{
-		background: url("../img/home_img.jpg") 0px 0px;
+		background: url("../img/home_img.jpg") left -10px 0px;
 	}
 	.mm
 	{
@@ -279,8 +304,9 @@ footer
 		border-radius: 15px;
 		margin: 0 40px 0 auto;
 		position: relative;
-		padding: 0px 20px;
+		padding: 0px 10px;
 		cursor: pointer;
+		line-height: 40px;
 		transition: color 1s, border-color 1s;
 	}
 	#menu_button:hover
@@ -326,7 +352,7 @@ footer
 	#move_bar
 	{
 		padding: 30px;
-		font-size: 24px;
+		font-size: 22px;
 		width: 360px;
 	}
 	#about_me
@@ -365,7 +391,7 @@ footer
 	}
 	#contact
 	{
-		padding: 140px 50px;
+		padding: 80px 50px;
 		margin: 40px auto;	
 	}
 	#contact_box
@@ -374,7 +400,7 @@ footer
 	}
 }
 	
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 640px)
 {
 	body 
 	{
