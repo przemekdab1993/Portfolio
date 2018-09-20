@@ -23,7 +23,7 @@ h2
 }
 p
 {
-	text-indent: 1.5em;
+	text-indent: 1.0em;
 }
 span.pink
 {
@@ -118,9 +118,9 @@ span.pink
 	bottom: 30vh;
 	background-color: rgba(20, 0, 26, 0.45);
 	padding: 40px;
-	font-size: 24px;
+	font-size: 28px;
 	border-radius: 20px;
-	width: 50%;
+	width: 45%;
 	color: #fff;
 	transition: background-color 1.2s;
 }
@@ -190,10 +190,10 @@ span.pink
 #projects_box 
 {
 	display: flex;
-	width: 900px;
+	width: 1000px;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin: 0px auto;
+	margin: 0px auto 10px auto;
 }
 .box2
 {
